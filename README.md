@@ -127,11 +127,3 @@ Este projeto está licenciado sob a **MIT License**. Consulte o arquivo [LICENSE
 Para dúvidas ou suporte:
 - **Perfil no GitHub:** [Skylinenando](https://github.com/Skylinenando)
 
----
-
-### Observações
-1. **Correções de Markdown:** Foram ajustadas quebras de linha e formatações de código.
-2. **Estrutura consistente:** Melhor organização entre seções.
-3. **Conteúdo claro:** Foco em facilitar a leitura e compreensão para o público do GitHub.
-
-Agora você pode copiar e colar este conteúdo diretamente no arquivo `README.md` do repositório! 😊
