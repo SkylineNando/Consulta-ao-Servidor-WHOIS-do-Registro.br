@@ -1,7 +1,3 @@
-Aqui está o conteúdo formatado e corrigido para melhor leitura e apresentação no GitHub:
-
----
-
 # Consulta WHOIS - Registro.br
 
 Este repositório contém um projeto simples que realiza consultas ao servidor **WHOIS do Registro.br** para obter informações detalhadas sobre domínios `.br`. Desenvolvido com PHP, ele permite fácil integração e exibição de resultados de consultas WHOIS.
