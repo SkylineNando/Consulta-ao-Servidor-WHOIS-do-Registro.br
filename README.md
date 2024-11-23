@@ -1,3 +1,7 @@
+Aqui está o conteúdo formatado e corrigido para melhor leitura e apresentação no GitHub:
+
+---
+
 # Consulta WHOIS - Registro.br
 
 Este repositório contém um projeto simples que realiza consultas ao servidor **WHOIS do Registro.br** para obter informações detalhadas sobre domínios `.br`. Desenvolvido com PHP, ele permite fácil integração e exibição de resultados de consultas WHOIS.
@@ -31,8 +35,26 @@ Este repositório contém um projeto simples que realiza consultas ao servidor *
    ```bash
    git clone https://github.com/Skylinenando/consulta-whois-registrobr.git
    cd consulta-whois-registrobr
+   ```
+
+2. Certifique-se de que o PHP está instalado:
+   ```bash
+   php --version
+   ```
+
+3. Inicie o servidor local:
+   ```bash
+   php -S localhost:8000
+   ```
+
+4. Acesse no navegador:
+   ```
+   http://localhost:8000
+   ```
+
 ---
 
+## ✨ Uso
 
 ### Via Interface Web
 1. Insira o domínio que deseja consultar no campo de busca (ex.: `exemplo.com.br`).
@@ -43,8 +65,9 @@ Este repositório contém um projeto simples que realiza consultas ao servidor *
 Para realizar a consulta diretamente pelo terminal:
 ```bash
 whois exemplo.com.br
+```
 
-
+---
 
 ## 💻 Exemplo de Código
 
@@ -107,5 +130,12 @@ Este projeto está licenciado sob a **MIT License**. Consulte o arquivo [LICENSE
 
 Para dúvidas ou suporte:
 - **Perfil no GitHub:** [Skylinenando](https://github.com/Skylinenando)
-```
 
+---
+
+### Observações
+1. **Correções de Markdown:** Foram ajustadas quebras de linha e formatações de código.
+2. **Estrutura consistente:** Melhor organização entre seções.
+3. **Conteúdo claro:** Foco em facilitar a leitura e compreensão para o público do GitHub.
+
+Agora você pode copiar e colar este conteúdo diretamente no arquivo `README.md` do repositório! 😊
