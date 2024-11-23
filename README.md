@@ -31,3 +31,81 @@ Este repositório contém um projeto simples que realiza consultas ao servidor *
    ```bash
    git clone https://github.com/Skylinenando/consulta-whois-registrobr.git
    cd consulta-whois-registrobr
+---
+
+
+### Via Interface Web
+1. Insira o domínio que deseja consultar no campo de busca (ex.: `exemplo.com.br`).
+2. Clique em "Consultar".
+3. Visualize as informações detalhadas retornadas pelo servidor WHOIS.
+
+### Via Linha de Comando
+Para realizar a consulta diretamente pelo terminal:
+```bash
+whois exemplo.com.br
+
+
+
+## 💻 Exemplo de Código
+
+Aqui está o script principal para realizar consultas WHOIS:
+
+```php
+<?php
+function consultarWhois($dominio) {
+    $servidor = "whois.registro.br"; // Servidor WHOIS
+    $porta = 43; // Porta padrão WHOIS
+
+    $conexao = fsockopen($servidor, $porta, $erro, $erroMensagem, 10);
+    if (!$conexao) {
+        return "Erro ao conectar ao servidor: $erro ($erroMensagem)";
+    }
+
+    fwrite($conexao, $dominio . "\r\n");
+    $resposta = '';
+    while (!feof($conexao)) {
+        $resposta .= fgets($conexao, 128);
+    }
+    fclose($conexao);
+
+    return $resposta;
+}
+
+// Domínio a consultar
+$dominio = "exemplo.com.br";
+$resultado = consultarWhois($dominio);
+
+echo "<pre>$resultado</pre>";
+?>
+```
+
+---
+
+## 🛑 Limitações
+
+- O servidor **whois.registro.br** pode bloquear consultas muito frequentes.
+- Apenas domínios **.br** são suportados.
+- Respeite a política de uso do Registro.br e evite consultas em massa.
+
+---
+
+## 🤝 Contribuições
+
+Contribuições são bem-vindas! Para colaborar:
+- Crie uma **issue** para relatar problemas ou sugerir melhorias.
+- Envie um **pull request** com suas alterações.
+
+---
+
+## 📄 Licença
+
+Este projeto está licenciado sob a **MIT License**. Consulte o arquivo [LICENSE](LICENSE) para mais detalhes.
+
+---
+
+## 📞 Contato
+
+Para dúvidas ou suporte:
+- **Perfil no GitHub:** [Skylinenando](https://github.com/Skylinenando)
+```
+
